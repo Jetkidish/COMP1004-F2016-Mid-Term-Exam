@@ -17,10 +17,6 @@ namespace COMP1004_F2016_Mid_Term_Exam
         // private Instance Object
         private Random _random;
 
-        private TextBox _firstAbility;
-        private TextBox _secondAbility;
-        private TextBox _modifiedAbility;
-
 
 
         public AbilityGeneratorForm()
@@ -79,79 +75,8 @@ namespace COMP1004_F2016_Mid_Term_Exam
 
             GenerateAbilities();
 
-            FirstAbilityComboBox.SelectedIndex = 0;
-            SecondAbilityComboBox.SelectedIndex = 0;
-            ModifyComboBox.SelectedIndex = 0;
-
-
-
         }
 
-        private void SwapButton_Click(object sender, EventArgs e)
-        {
-            string temporaryAbility;
-
-            temporaryAbility = this._firstAbility.Text;
-            this._firstAbility.Text = this._secondAbility.Text;
-            this._secondAbility.Text = temporaryAbility;
-        }
-
-        private TextBox ChooseAbility(int selectedAbility)
-        {
-            TextBox textbox = new TextBox();
-
-            switch (selectedAbility)
-            {
-                case (int)Ability.Strength:
-                    textbox = StrengthTextBox;
-                    break;
-                case (int)Ability.Dexterity:
-                    textbox = DexterityTextBox;
-                    break;
-                case (int)Ability.Constitution:
-                    textbox = ConstitutionTextBox;
-                    break;
-                case (int)Ability.Intelligence:
-                    textbox = IntelligenceTextBox;
-                    break;
-                case (int)Ability.Wisdom:
-                    textbox = WisdomTextBox;
-                    break;
-                case (int)Ability.Charisma:
-                    textbox = CharismaTextBox;
-                    break;
-            }
-
-            return textbox;
-
-        }
-
-
-        private void FirstAbilityComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // make a reference to the first ability selected
-            this._firstAbility = ChooseAbility(FirstAbilityComboBox.SelectedIndex);
-        }
-
-        private void SecondAbilityComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // make a reference to the first ability selected
-            this._secondAbility = ChooseAbility(SecondAbilityComboBox.SelectedIndex);
-        }
-
-        private void ModifyComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // make a reference to the modified ability selected
-            this._modifiedAbility = ChooseAbility(ModifyComboBox.SelectedIndex);
-        }
-
-        private void ModifyButton_Click(object sender, EventArgs e)
-        {
-            int ScoreToModify = Convert.ToInt32(this._modifiedAbility.Text);
-            ScoreToModify += 1;
-            this._modifiedAbility.Text = ScoreToModify.ToString();
-            ModifyGroupBox.Enabled = false;
-        }
 
         private void NextButton_Click(object sender, EventArgs e)
         {

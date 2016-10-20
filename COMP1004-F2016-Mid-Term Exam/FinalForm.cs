@@ -17,6 +17,20 @@ namespace COMP1004_F2016_Mid_Term_Exam
         public FinalForm()
         {
             InitializeComponent();
+            this.FinalForm_Load();
+            
+        }
+        private void FinalForm_Load()
+        {
+            FirstNameTextBox.Text = Program.character.FirstName;
+            LastNameTextBox.Text = Program.character.LastName;
+            StrengthTextBox.Text = Program.character.Strength.ToString();
+            DexterityTextBox.Text = Program.character.Dexterity.ToString();
+            ConstitutionTextBox.Text = Program.character.Constitution.ToString();
+            IntelligenceTextBox.Text = Program.character.Intelligence.ToString();
+            WisdomTextBox.Text = Program.character.Wisdom.ToString();
+            CharismaTextBox.Text = Program.character.Charisma.ToString();
+            RaceTextBox.Text = Program.character.Race;
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
