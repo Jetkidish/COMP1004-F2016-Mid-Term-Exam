@@ -34,7 +34,12 @@ namespace COMP1004_F2016_Mid_Term_Exam
             // Step 2 - close this form
             this.Close();
         }
-
+        /// <summary>
+        /// RaceRadioButton_CheckedChanged Event Handler
+        /// Check if the radio button has been changed, update appropriate info, change picture box to match new race selection
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RaceRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton selectedRace = (RadioButton)sender;

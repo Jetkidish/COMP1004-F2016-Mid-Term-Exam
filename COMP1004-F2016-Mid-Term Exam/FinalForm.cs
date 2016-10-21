@@ -20,6 +20,10 @@ namespace COMP1004_F2016_Mid_Term_Exam
             this.FinalForm_Load();
             
         }
+        /// <summary>
+        /// Final Form Load method
+        /// This is called when the program is initialized, and will ensure all textboxes and pictureboxes are updated accordingly
+        /// </summary>
         private void FinalForm_Load()
         {
             FirstNameTextBox.Text = Program.character.FirstName;
@@ -52,7 +56,11 @@ namespace COMP1004_F2016_Mid_Term_Exam
                 pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
-
+        /// <summary>
+        /// aboutToolStripMenuItem_Click Event Handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Step 1 - instantiate an object of the AboutBox form
@@ -61,13 +69,23 @@ namespace COMP1004_F2016_Mid_Term_Exam
             // Step 2 - use the ShowDialog method of the aboutbox
             aboutBox.ShowDialog();
         }
-
+        /// <summary>
+        /// BackButton_Click Event Handler
+        /// This will take the user back to the previous form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.previousForm.Show();
             this.Close();
         }
-
+        /// <summary>
+        /// ExitToolStripMenuItem_Click
+        /// This will exit the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
