@@ -40,6 +40,22 @@ namespace COMP1004_F2016_Mid_Term_Exam
             RadioButton selectedRace = (RadioButton)sender;
 
             this._selectedRace = selectedRace.Text;
+            if (this._selectedRace == "Human")
+            {
+                pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Human_Male;
+            }
+            else if (this._selectedRace == "Elf")
+            {
+                pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Elf_Male;
+            }
+            else if (this._selectedRace == "Halfling")
+            {
+                pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Halfling_Male;
+            }
+            else if (this._selectedRace == "Dwarf")
+            {
+                pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Dwarf_Male;
+            }
         }
 
         private void NextButton_Click(object sender, EventArgs e)

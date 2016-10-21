@@ -173,7 +173,7 @@
             this.LastNameListBox.Size = new System.Drawing.Size(152, 94);
             this.LastNameListBox.Sorted = true;
             this.LastNameListBox.TabIndex = 2;
-            this.LastNameListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.LastNameListBox.SelectedIndexChanged += new System.EventHandler(this.LastNameListBox_SelectedIndexChanged);
             // 
             // FirstNameLabel
             // 
