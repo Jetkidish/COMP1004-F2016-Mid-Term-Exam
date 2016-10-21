@@ -114,7 +114,7 @@
             // NextButton
             // 
             this.NextButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.Location = new System.Drawing.Point(768, 603);
+            this.NextButton.Location = new System.Drawing.Point(701, 602);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(113, 40);
             this.NextButton.TabIndex = 6;
@@ -127,7 +127,8 @@
             this.pictureBox1.Image = global::COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Human_Male;
             this.pictureBox1.Location = new System.Drawing.Point(165, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(700, 584);
+            this.pictureBox1.Size = new System.Drawing.Size(472, 640);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -136,7 +137,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(893, 655);
+            this.ClientSize = new System.Drawing.Size(826, 654);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.NextButton);
@@ -150,6 +151,7 @@
             this.RaceGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
