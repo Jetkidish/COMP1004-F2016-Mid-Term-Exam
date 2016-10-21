@@ -43,18 +43,22 @@ namespace COMP1004_F2016_Mid_Term_Exam
             if (this._selectedRace == "Human")
             {
                 pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Human_Male;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
             else if (this._selectedRace == "Elf")
             {
                 pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Elf_Male;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
             else if (this._selectedRace == "Halfling")
             {
                 pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Halfling_Male;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
             else if (this._selectedRace == "Dwarf")
             {
                 pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Dwarf_Male;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
 

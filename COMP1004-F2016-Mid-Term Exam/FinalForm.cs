@@ -31,6 +31,26 @@ namespace COMP1004_F2016_Mid_Term_Exam
             WisdomTextBox.Text = Program.character.Wisdom.ToString();
             CharismaTextBox.Text = Program.character.Charisma.ToString();
             RaceTextBox.Text = Program.character.Race;
+            if (RaceTextBox.Text == "Human")
+            {
+                pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Human_Male;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else if (RaceTextBox.Text == "Elf")
+            {
+                pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Elf_Male;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else if (RaceTextBox.Text == "Halfling")
+            {
+                pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Halfling_Male;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else if (RaceTextBox.Text == "Dwarf")
+            {
+                pictureBox1.Image = COMP1004_F2016_Mid_Term_Exam.Properties.Resources.Dwarf_Male;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            }
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
